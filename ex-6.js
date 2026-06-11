@@ -34,10 +34,13 @@ let getJohnOrders = () => {
 
 // Start coding here
 async function awaitFunction (){
+  try{
   const profileResponse = await getJohnProfile();
    console.log(profileResponse);
-   
     const orderResponse = await getJohnOrders();
    console.log(orderResponse);
+  } catch(error){
+    console.log(error)
+  }
 }
 awaitFunction();

@@ -13,7 +13,11 @@ let getJohnProfile = () => {
 };
 // Start coding here
 async function awaitFunction (){
+  try{
   const response = await getJohnProfile();
    console.log(response);
+  } catch(error){
+     console.log(error)
+  }
 }
 awaitFunction();
