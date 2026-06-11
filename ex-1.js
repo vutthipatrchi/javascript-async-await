@@ -14,3 +14,11 @@ let getJohnProfile = () => {
   });
 };
 // Start coding here
+
+function resolved(data){
+  console.log(data)
+}
+
+getJohnProfile()
+  .then(resolved)
+  
